@@ -12,11 +12,12 @@
       margin: 0;
       padding: 0;
       height: 100vh;
-      overflow: hidden;
+      overflow-x: hidden;
     }
 
     .container {
       margin-top: 60px;
+      padding: 0 20px;
     }
 
     h1 {
@@ -28,13 +29,16 @@
 
     .buttons {
       margin: 20px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
     }
 
     button {
       background: #fff;
       border: none;
       padding: 15px 25px;
-      margin: 10px;
       font-size: 20px;
       border-radius: 12px;
       cursor: pointer;
@@ -122,6 +126,8 @@
       align-items: center;
       height: 100vh;
       background: linear-gradient(135deg, #f6d365, #fda085);
+      padding: 20px;
+      text-align: center;
     }
 
     #welcome-screen input {
@@ -147,6 +153,64 @@
 
     #welcome-screen button:hover {
       background: #eee;
+    }
+
+    /* 🌟 RESPONSIVE DESIGN 🌟 */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      button {
+        font-size: 18px;
+        padding: 12px 20px;
+      }
+
+      .result {
+        font-size: 1rem;
+        padding: 15px 25px;
+        min-width: 200px;
+      }
+
+      .scoreboard {
+        font-size: 18px;
+      }
+
+      .leaderboard {
+        width: 90%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        height: auto;
+        min-height: 100vh;
+        overflow-y: auto;
+      }
+
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      .buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      button {
+        width: 80%;
+        font-size: 16px;
+      }
+
+      .leaderboard {
+        width: 90%;
+        font-size: 0.9rem;
+      }
+
+      .result {
+        width: 90%;
+        font-size: 0.95rem;
+      }
     }
   </style>
 </head>
