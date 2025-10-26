@@ -20,7 +20,6 @@ An interactive **Rock Paper Scissors** game built with HTML, CSS, and JavaScript
 - CSS
 - JavaScript
 
-## Live Demo
-Your game will be available at:  
-[GitHub Pages URL]()
+## 🚀 Live Preview
+👉 **[Live Project]https://sites.google.com/view/rockpaperscissorgames/home**
 
